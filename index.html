@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #00ff88;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+        }
+        .image-card {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 255, 136, 0.1);
+        }
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .image-info {
+            padding: 10px;
+        }
+        .image-info h3 {
+            color: #00ff88;
+            margin-top: 0;
+        }
+        .prompt {
+            font-style: italic;
+            color: #aaaaaa;
+            margin: 10px 0;
+        }
+        .metadata {
+            font-size: 0.9em;
+            color: #888888;
+        }
+        .download-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #00ff88;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .download-link:hover {
+            background-color: #00cc6a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Generated Image Gallery</h1>
+        <div class="gallery">
+            <div class="image-card">
+                <img src="https://evalstate-flux1-schnell.hf.space/gradio_api/file=/tmp/gradio/911c554ffa0cf54d9cb13c7f90c5a0d74476b1305ec538a4430a4648651a26bf/image.webp" alt="Cyberpunk Butterfly">
+                <div class="image-info">
+                    <h3>Cyberpunk Butterfly</h3>
+                    <p class="prompt">Prompt: "A beautiful digital art piece showing a colorful butterfly landing on a futuristic holographic flower, with neon lights and cyberpunk aesthetics, highly detailed"</p>
+                    <div class="metadata">
+                        <p>Model: Flux 1 Schnell</p>
+                        <p>Resolution: 1024x1024</p>
+                        <p>Inference Steps: 4</p>
+                        <p>Generated: June 6, 2025</p>
+                    </div>
+                    <a href="https://evalstate-flux1-schnell.hf.space/gradio_api/file=/tmp/gradio/911c554ffa0cf54d9cb13c7f90c5a0d74476b1305ec538a4430a4648651a26bf/image.webp" class="download-link" download>Download Image</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
